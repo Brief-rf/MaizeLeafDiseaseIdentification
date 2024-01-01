@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">玉米病虫害检测</string>
+    <string name="upload">检测</string>
+    <string name="waiting">待预测</string>
+    <string name="take_pic">拍照</string>
+    <string name="choose_pic">选择照片</string>
+    <string name="contentDiscription">选择图片</string>
+</resources>
