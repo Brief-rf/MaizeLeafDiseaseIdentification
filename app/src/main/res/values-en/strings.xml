@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Corn leaf disease identification</string>
+    <string name="upload">Detect</string>
+    <string name="waiting">Waiting for detect</string>
+    <string name="take_pic">Take photo</string>
+    <string name="choose_pic">Choose picture</string>
+    <string name="contentDiscription">Choose picture</string>
+    <string name="null_pic_show">Please choose a picture.</string>
+    <string name="low_confidence_tip">Tips</string>
+    <string name="low_confidence_show">The recognition confidence is lower than the predicted value, suspected wrong recognition, please send the picture feedback to us, we will improve the more accurate model in the subsequent update.</string>
+    <string name="cancel_feedback">User cancel feedback</string>
+    <string name="cant_identify">Fail to identify</string>
+    <string name="feedback_pic">Feedback this picture</string>
+    <string name="cancel_feedback_btn">No</string>
+</resources>
