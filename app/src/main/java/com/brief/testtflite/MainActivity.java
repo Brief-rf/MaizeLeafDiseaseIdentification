@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         // judge the maximum probability with 0.8
-        if (maxCategory.getScore() < 0.99) {
+        if (maxCategory.getScore() < 0.8) {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle(R.string.low_confidence_tip).
                     setMessage(R.string.low_confidence_show).

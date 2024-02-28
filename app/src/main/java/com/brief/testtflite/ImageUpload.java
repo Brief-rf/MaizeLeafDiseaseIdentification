@@ -26,7 +26,7 @@ import okhttp3.Response;
 
 @SuppressLint("StaticFieldLeak")
 public class ImageUpload extends AsyncTask<String, Void, String> {
-    private static final String GITHUB_TOKEN = "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";
+    private static final String GITHUB_TOKEN = "put your github token"; //
     private Context context;
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     public ImageUpload(Context context) {
@@ -54,11 +54,14 @@ public class ImageUpload extends AsyncTask<String, Void, String> {
                 BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file));
                 bis.read(fileData, 0, fileData.length);
                 data.put("content", Base64.encodeToString(fileData, Base64.DEFAULT));
+                filename = "img" + System.currentTimeMillis() + filename.split("/")[filename.split("/").length - 1].replace(" ", "%20");
             }
+
+
 
             RequestBody body = RequestBody.create(JSON, data.toString());
             Request request = new Request.Builder()
-                    .url("https://api.github.com/repos/" + user + "/CornDiseaseImagesStorage/contents/imgs/" + filename.split("/")[filename.split("/").length - 1].replace(" ", "%20"))
+                    .url("https://api.github.com/repos/" + user + "/CornDiseaseImagesStorage/contents/imgs/" + filename)
                     .put(body)
                     .addHeader("Authorization", "token " + GITHUB_TOKEN)
                     .addHeader("Content-Type", "application/json")
