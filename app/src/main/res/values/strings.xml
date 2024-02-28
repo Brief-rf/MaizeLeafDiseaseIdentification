@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">玉米病虫害检测</string>
-    <string name="upload">检测</string>
+    <string name="app_name">玉米叶片病虫害鉴别</string>
+    <string name="upload">鉴别</string>
     <string name="waiting">待预测</string>
     <string name="take_pic">拍照</string>
-    <string name="choose_pic">选择照片</string>
+    <string name="choose_pic">选择图片</string>
     <string name="contentDiscription">选择图片</string>
+    <string name="null_pic_show">请选择一张图片</string>
+    <string name="low_confidence_tip">提示</string>
+    <string name="low_confidence_show">识别置信度低于预测值，疑似错误识别，请将图片反馈给我们，在后续的更新中我们将会完善更精准模型。</string>
+    <string name="cancel_feedback">用户取消反馈</string>
+    <string name="cant_identify">无法识别</string>
+    <string name="feedback_pic">反馈这幅图片</string>
+    <string name="cancel_feedback_btn">不反馈</string>
 </resources>
