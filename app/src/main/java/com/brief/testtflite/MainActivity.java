@@ -41,6 +41,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     int imageSize = 224;
+    long time_cost;
     Brief model;
     TextView result_show;
     ImageView imageView;
@@ -197,7 +198,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         inputFeature0.loadBuffer(byteBuffer);
+        time_cost = System.currentTimeMillis();
+        Log.d("TAG", "time_cost: " + time_cost);
         Brief.Outputs outputs = model.process(inputFeature0);
+        time_cost = System.currentTimeMillis() - time_cost;
         // get the result
         List<Category> probability= outputs.getProbabilityAsCategoryList();
         for (Category category : probability) {
@@ -234,7 +238,12 @@ public class MainActivity extends AppCompatActivity {
             upload.complete(true);
             return;
         }
-        result_show.setText(maxCategory.getLabel() + " " + maxCategory.getScore());
+
+        String show_text = getString(R.string.predict_label) + ": " + maxCategory.getLabel() + "\n"
+                + getString(R.string.confidence) + ": " + maxCategory.getScore() + "\n"
+                + getString(R.string.cost_time) + ": " + time_cost + "ms";
+        Log.d("TAG", "classifyImage: " + show_text);
+        result_show.setText(show_text);
         upload.complete(true);
     }
     public String bitmapToBase64(Bitmap bitmap) {
