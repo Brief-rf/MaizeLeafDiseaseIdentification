@@ -12,4 +12,7 @@
     <string name="cant_identify">无法识别</string>
     <string name="feedback_pic">反馈这幅图片</string>
     <string name="cancel_feedback_btn">不反馈</string>
+    <string name="cost_time">耗时</string>
+    <string name="predict_label">预测类别</string>
+    <string name="confidence">置信度</string>
 </resources>
