@@ -1,6 +1,9 @@
 # Description
 [中文文档](./README_ZH.md)
+Software development flow chart
+![](images/flowchart.jpg)
 Screenshot:
+
 
 ![image-20240101222025168](images/demo.png)
 

@@ -1,5 +1,8 @@
 # 说明
 [English](./README.md)
+软件开发流程图
+![](images/flowchart_CN.jpg)
+
 软件页面：
 
 ![image-20240101222025168](images/demo_CN.png)
