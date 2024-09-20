@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Corn leaf disease identification</string>
+    <string name="app_name">Maize leaf disease identification</string>
     <string name="upload">Identify</string>
     <string name="waiting">Waiting for detect</string>
     <string name="take_pic">Take a picture</string>

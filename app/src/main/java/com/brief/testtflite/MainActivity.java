@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
             requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         }
     }
-
     public static Bitmap zoomImg(Bitmap bm, int newWidth, int newHeight) {
         // get the width and height of the image
         int width = bm.getWidth();
