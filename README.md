@@ -15,6 +15,6 @@ When users identify images, if the detected category confidence is less than 0.8
 
 ![image-20240101222025168](images/Feedback.png)
 
-If you think the test result is not accurate, you can also identify the feedback image by long pressing ```Detect``` on the main interface of the software. All feedback images will be stored in the repository[CornDiseaseImagesStorage](https://github.com/Brief-rf/CornDiseaseImagesStorage)
+If you think the test result is not accurate, you can also identify the feedback image by long pressing ```Detect``` on the main interface of the software. All feedback images will be stored in the repository[MaizeDiseaseImagesStorage](https://github.com/Brief-rf/MaizeDiseaseImagesStorage)
 
-> Note, please do not feed back images unrelated to corn pests and diseases!
+> Note, please do not feed back images unrelated to maize pests and diseases!
